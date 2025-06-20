@@ -12,11 +12,6 @@ jobs:
       CCACHE_MAXSIZE: "10G"
       CCACHE_HARDLINK: "true"
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
       - uses: DamianReeves/write-file-action@master
         with:
           path: ./API_KEYS
